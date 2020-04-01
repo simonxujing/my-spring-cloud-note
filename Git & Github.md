@@ -8,15 +8,27 @@
 # 二、Git 命令
 
 1. git status：git状态
+
 2. git初始化用户名、邮箱：
    1. git config --global user.name 'simonxujing'
    2. git config --global user.email 'simonxujing@gmail.com'
+   
 3. git init：git初始化
+
 4. touch config-dev.yml: 创建一个名为config-dev.yml 文件
+
 5. git add config-dev.yml：将名为config-dev.yml 文件提交至暂存区
+
 6. git commit -m 'desc: add xx' : 提到暂存区的文件至仓库
+
 7. 删除文件：
    1. rm -rf xxx.yml 本地删除
    2. git rm xxx.yml 从git上删除
    3. git commit -m 'remove xxx.yml' 提交删除操作
+   
 8. git push: 在commit之后执行，将文件远程仓库
+
+9. 修改.git目录中的config文件，即可不用每次都输入账号密码
+
+   [remote "origin"]
+   	url = https://userName:password@github.com/simonxujing/springcloud-config.git
