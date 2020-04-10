@@ -269,7 +269,7 @@ server
     listen 1111; # 监听端口
     server_name localhost; #域名
     location / {
-    proxy_pass http://cluster;
+    	proxy_pass http://cluster;
     }
     access_log off;
 }
